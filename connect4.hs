@@ -61,8 +61,6 @@ vertWinSet x n = zip (take 4 $ repeat x) ([n..(n+3)])
 vertWinSets x = map (vertWinSet x) [0..(numRows - winCount)]
 allVertWinSets = concatMap vertWinSets [0..(numCols-1)]
 
-horizWinSet x n = 
-
 allWinSets = allVertWinSets
 
 discSet _ [] = []
